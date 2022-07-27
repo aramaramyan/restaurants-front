@@ -7,11 +7,12 @@ export default function RestaurantsList({ restaurants }) {
       {restaurants.map(restaurant => {
         return <RestaurantItem
           key={restaurant.id}
+          id={restaurant.id}
           name={restaurant.name}
           logo={restaurant.images[0]}
           rates={restaurant.rates}
           location={restaurant.location}
-          openTime={restaurants.openTime}
+          openTime={restaurant.openTime}
         />;
       })}
     </div>

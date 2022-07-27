@@ -1,0 +1,15 @@
+@import "./../../styles/mixins";
+
+.RateStars {
+  @include flexRow(center, center);
+  gap: 5px;
+
+  p {
+    font-size: 18px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

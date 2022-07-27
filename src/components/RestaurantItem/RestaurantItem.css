@@ -7,6 +7,7 @@
   width: 100%;
   height: 200px;
   padding: 20px;
+  cursor: pointer;
 }
 .RestaurantItem__logo {
   min-width: 150px;
@@ -28,6 +29,9 @@
 .RestaurantItem__content_name {
   font-size: 26px;
   font-family: "Prompt", sans-serif;
+}
+.RestaurantItem__content_openTime {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=RestaurantItem.css.map */

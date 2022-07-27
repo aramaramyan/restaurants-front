@@ -130,7 +130,7 @@ const appSlice = createSlice({
             date: 1658898475577
           }
         ],
-        "rates": [3, 5, 5],
+        "rates": [3, 5, 5, 2, 1],
         "phone": "+374 10 524211",
         "location": "st. Isahakyan, 28, 1/3 206-206, Yerevan 0009 Armenia",
         "webPage": "https://www.mezzo.am/",

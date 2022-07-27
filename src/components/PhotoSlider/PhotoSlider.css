@@ -1,0 +1,82 @@
+.PhotoStack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.PhotoStack__left_arrow, .PhotoStack__right_arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.PhotoStack__left_arrow img, .PhotoStack__right_arrow img {
+  width: 24px;
+  height: 24px;
+}
+.PhotoStack__left_arrow:hover, .PhotoStack__right_arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.PhotoStack__left_arrow img {
+  transform: rotate(180deg);
+}
+.PhotoStack__circlesWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 35px;
+}
+.PhotoStack__circlesWrapper_dotActive {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--lightGray);
+  cursor: pointer;
+}
+.PhotoStack__circlesWrapper_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  cursor: pointer;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ANIMATION KEYFRAMES */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=PhotoSlider.css.map */

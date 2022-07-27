@@ -1,4 +1,5 @@
 import RestaurantItem from "../RestaurantItem/RestaurantItem";
+import "./RestaurantsList.scss"
 
 export default function RestaurantsList({ restaurants }) {
   return (

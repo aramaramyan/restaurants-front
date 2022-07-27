@@ -1,0 +1,84 @@
+.RestaurantPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.RestaurantPage__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+}
+.RestaurantPage__navigation p:nth-child(2) {
+  cursor: default;
+}
+.RestaurantPage__navigation_route {
+  cursor: pointer;
+}
+.RestaurantPage__navigation_route:last-child {
+  font-weight: 500;
+  cursor: default;
+}
+.RestaurantPage__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.RestaurantPage__top_images {
+  min-width: 500px;
+  height: 330px;
+}
+.RestaurantPage__top_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+.RestaurantPage__top_description .contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  margin-left: -10px;
+}
+.RestaurantPage__top_description .contacts p, .RestaurantPage__top_description .contacts a {
+  padding: 0 10px;
+  border-right: 1px solid;
+  text-decoration: none;
+}
+.RestaurantPage__top_description .contacts p:last-child, .RestaurantPage__top_description .contacts a:last-child {
+  border: none;
+}
+.RestaurantPage__top_description .contacts p:visited, .RestaurantPage__top_description .contacts a:visited {
+  color: black;
+}
+.RestaurantPage__top_description .title h1 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+}
+.RestaurantPage__top_description .kitchen h3 {
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 500;
+  cursor: default;
+}
+.RestaurantPage__top_description .kitchen ul {
+  margin-left: 30px;
+}
+.RestaurantPage__top_description .kitchen ul li {
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=RestaurantPage.css.map */

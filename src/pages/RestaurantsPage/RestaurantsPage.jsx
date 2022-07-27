@@ -7,9 +7,11 @@ export default function RestaurantsPage({ restaurants }) {
   return (
     <div className="RestaurantsPage">
       <Navbar />
-      <div className="RestaurantsPage__content">
-        <RestaurantsListContainer/>
-        <MapContainer/>
+      <div className="container">
+        <div className="RestaurantsPage__content">
+          <RestaurantsListContainer/>
+          <MapContainer/>
+        </div>
       </div>
     </div>
   );

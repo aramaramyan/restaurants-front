@@ -36,18 +36,20 @@
   width: 100%;
   height: 35px;
 }
-.PhotoStack__circlesWrapper_dotActive {
+
+.dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--lightGray);
+  background-color: #C7C7C7;
   cursor: pointer;
 }
-.PhotoStack__circlesWrapper_dot {
+
+.dotActive {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: #FFFFFF;
   cursor: pointer;
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

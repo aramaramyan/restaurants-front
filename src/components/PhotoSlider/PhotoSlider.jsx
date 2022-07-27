@@ -3,7 +3,7 @@ import arrowIcon from "./../../icons/arrow.svg";
 import "./PhotoSlider.scss";
 
 export default function PhotoStack({images}) {
-  let [currentImg, setCurrentImg] = useState(0);
+  let [currentImg, setCurrentImg] = useState(1);
   const dots = Array.from(Array(images.length).keys());
 
   function next() {
@@ -37,7 +37,7 @@ export default function PhotoStack({images}) {
         {dots.map(dot => {
           return <div
             key={dot}
-            className={currentImg === dot? "PhotoStack__circlesWrapper_dotActive" : "PhotoStack__circlesWrapper_dot"}
+            className={currentImg === dot? "dotActive" : "dot"}
             onClick={() => doClick(dot)}
           />
         })}

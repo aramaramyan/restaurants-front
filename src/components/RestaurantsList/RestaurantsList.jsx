@@ -8,6 +8,10 @@ export default function RestaurantsList({ restaurants }) {
         return <RestaurantItem
           key={restaurant.id}
           name={restaurant.name}
+          logo={restaurant.images[0]}
+          rates={restaurant.rates}
+          location={restaurant.location}
+          openTime={restaurants.openTime}
         />;
       })}
     </div>

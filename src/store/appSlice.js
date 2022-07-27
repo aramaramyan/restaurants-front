@@ -7,7 +7,6 @@ const appSlice = createSlice({
       {
         "id": 1,
         "name": "Sherep",
-        "description": "Restaurant description 1",
         "reviews": [
           {
             title: "One of the best places I visited. Service is top! Food so delicious, especially hinkaliDefinitely recommend to visit!",
@@ -19,6 +18,11 @@ const appSlice = createSlice({
           }
         ],
         "rates": [5, 5, 4, 5],
+        "phone": "+374 43 600880",
+        "location": "Amiryan str. 1, Yerevan 0010 Armenia",
+        "webPage": "https://www.yeremyanprojects.com/en/restaurants/sherep",
+        "openTime": "09:30 AM - 12:00 AM",
+        "kitchenType": ["Middle Eastern", "Eastern European", "Central European", "Armenian", "Barbecue", "Healthy"],
         "images": [
           "https://drive.google.com/uc?id=1fTtZBdfzo-6PqGPtj_PV7H1WQ9c7bhdW",
           "https://drive.google.com/uc?id=1HQlE1p-IitTeVxUsMSmqmLJC_umHwDkX",
@@ -30,7 +34,6 @@ const appSlice = createSlice({
       {
         "id": 2,
         "name": "Yasaman",
-        "description": "Restaurant description 2",
         "reviews": [
           {
             title: "I came here with my family and the food was amazing, reasonable price and excellent flavors, i would recommend you to come here.",
@@ -42,6 +45,11 @@ const appSlice = createSlice({
           }
         ],
         "rates": [5, 4, 4, 3],
+        "phone": "+374 11 803333",
+        "location": "Yekmalyan str. 111, Yerevan 0002 Armenia",
+        "webPage": "https://www.facebook.com/YasamanYVN/",
+        "openTime": "10:00 AM - 12:00 AM",
+        "kitchenType": ["Armenian", "Caucasian", "Barbecue", "Contemporary"],
         "images": [
           "https://drive.google.com/uc?id=1rQVg3ONWWUYryZI7hSiafFU15lfpy0Zq",
           "https://drive.google.com/uc?id=1xAXt6hLhh6dUpjxbE09jvIvIqjNOTlPv",
@@ -53,7 +61,6 @@ const appSlice = createSlice({
       {
         "id": 3,
         "name": "Seasons",
-        "description": "Restaurant description 3",
         "reviews": [
           {
             title: "This was our 1st food experience in Yerevan. A place were authentic Armenian food meets with European cuisine. Excellent customer service as well as atmosphere. Price was fair.",
@@ -65,6 +72,11 @@ const appSlice = createSlice({
           }
         ],
         "rates": [3, 4, 5],
+        "phone": "+374 43 709070",
+        "location": "Mesrop Mashtots Ave., 15 At Seasons Park, Yerevan 0002 Armenia",
+        "webPage": "https://www.yeremyanprojects.com/en/restaurants/seasons",
+        "openTime": "12:00 PM - 12:00 AM",
+        "kitchenType": ["European", "Armenian", "Contemporary"],
         "images": [
           "https://drive.google.com/uc?id=1eKqpszjyba6NzkAT4RIyZK_jfL0LVJ_m",
           "https://drive.google.com/uc?id=1J8-W4mEg-4uwf3A27yoewV6-J8goBODP",
@@ -76,7 +88,6 @@ const appSlice = createSlice({
       {
         "id": 4,
         "name": "el Garden",
-        "description": "Restaurant description 4",
         "reviews": [
           {
             title: "This is a unique and beautiful place to chill, remember to do a reservation on weekends or else you won’t be able to find a spot!",
@@ -93,6 +104,11 @@ const appSlice = createSlice({
           }
         ],
         "rates": [4, 4, 5],
+        "phone": "+374 41 490000",
+        "location": "Tsitsernakaberd Park 8, Yerevan 0082 Armenia",
+        "webPage": "https://www.elgarden.am/",
+        "openTime": "10:00 AM - 02:00 AM",
+        "kitchenType": ["Sushi", "European", "Bar", "Cafe", "Armenian"],
         "images": [
           "https://drive.google.com/uc?id=1YpU9UfzD9nZgtHkpDOe1v8N7GSUs3mi4",
           "https://drive.google.com/uc?id=16bAg-9ckBVATtpJHEJ6Sv8VHUeV9ZMJ4",
@@ -104,7 +120,6 @@ const appSlice = createSlice({
       {
         "id": 5,
         "name": "Mezzo",
-        "description": "Restaurant description 5",
         "reviews": [
           {
             title: "Had a great time with friends. The live music was fantastics. Special thanks to Stepan for the warm welcome and fabulous service!!!",
@@ -116,6 +131,11 @@ const appSlice = createSlice({
           }
         ],
         "rates": [3, 5, 5],
+        "phone": "+374 10 524211",
+        "location": "st. Isahakyan, 28, 1/3 206-206, Yerevan 0009 Armenia",
+        "webPage": "https://www.mezzo.am/",
+        "openTime": "12:00 PM - 12:00 AM",
+        "kitchenType": ["Sushi", "European", "Eastern European", "Central European", "Bar", "International"],
         "images": [
           "https://drive.google.com/uc?id=1c1GXBGn8JTqcuC9mPeAR6DjTcW49V6Mg",
           "https://drive.google.com/uc?id=1vRsmPQMNCMrZOxsDnZhcXOleILCNeiLq",

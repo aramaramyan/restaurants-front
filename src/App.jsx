@@ -1,4 +1,4 @@
-import RestaurantsContainer from "./components/Restaurants/RestaurantsContainer";
+import RestaurantsContainer from "./pages/Restaurants/RestaurantsContainer";
 import './App.scss';
 import {Routes, Route, Navigate} from "react-router";
 

@@ -1,13 +1,13 @@
-import RestaurantsContainer from "./pages/Restaurants/RestaurantsContainer";
-import './App.scss';
 import {Routes, Route, Navigate} from "react-router";
+import RestaurantsPage from "./pages/RestaurantsPage/RestaurantsPage";
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Navigate to="/restaurants" />}/>
-        <Route path="/restaurants" element={<RestaurantsContainer />}/>
+        <Route path="/restaurants" element={<RestaurantsPage />}/>
       </Routes>
     </div>
   );

@@ -1,9 +1,14 @@
+import RestaurantsContainer from "./components/Restaurants/RestaurantsContainer";
 import './App.scss';
+import {Routes, Route, Navigate} from "react-router";
 
 function App() {
   return (
     <div className="App">
-      <h1>Restaurants App</h1>
+      <Routes>
+        <Route path="/" element={<Navigate to="/restaurants" />}/>
+        <Route path="/restaurants" element={<RestaurantsContainer />}/>
+      </Routes>
     </div>
   );
 }

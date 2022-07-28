@@ -3,7 +3,7 @@ import MapContainer from "../../components/Map/MapContainer";
 import RestaurantsListContainer from "../../components/RestaurantsList/RestaurantsListContainer";
 import "./RestaurantsPage.css";
 
-export default function RestaurantsPage({ restaurants }) {
+export default function RestaurantsPage() {
   return (
     <div className="RestaurantsPage">
       <Navbar />

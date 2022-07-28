@@ -14,8 +14,6 @@ export default function ReviewForm() {
   const [review, setReview] = useState("");
   const [placeholder, setPlaceholder] = useState(PLACEHOLDER.DEFAULT);
 
-  console.log(`:::"render":::`);
-
   function onHover(index) {
     setStars(prev => [...prev.fill(starFilled, 0, index + 1)]);
   }

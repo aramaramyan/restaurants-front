@@ -15,7 +15,7 @@ export default function Navbar() {
         <img
           src={logo}
           className="Navbar__logo"
-          alt="Restaurants Logo"
+          alt="App Logo"
           onClick={goToRestaurants}
         />
       </div>

@@ -1,0 +1,58 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+
+.ReviewItem {
+  @include flexRow(flex-start, flex-start);
+  gap: 16px;
+  margin-bottom: 40px;
+
+  &__userPhoto {
+    @include flexColumn(flex-start, flex-start);
+
+    &_icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__content {
+    @include flexColumn(flex-start, flex-start);
+    gap: 5px;
+
+    &_header {
+      @include flexRow(flex-start, center);
+      gap: 30px;
+      width: 100%;
+
+      p {
+        &:first-child {
+          font-family: "Hind Guntur", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        &:last-child {
+          font-family: "Hind Guntur", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &_text {
+      width: 80%;
+      font-size: 20px;
+      font-style: italic;
+      overflow-wrap: break-word;
+    }
+
+    &_footer {
+      @include flexRow(flex-start, center);
+      width: 100%;
+
+      .rateText {
+        margin-right: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+}

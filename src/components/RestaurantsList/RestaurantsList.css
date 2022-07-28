@@ -1,0 +1,36 @@
+.RestaurantsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.RestaurantsList__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+}
+.RestaurantsList__title h2 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+}
+.RestaurantsList__title img {
+  width: 32px;
+  height: 32px;
+}
+.RestaurantsList__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=RestaurantsList.css.map */

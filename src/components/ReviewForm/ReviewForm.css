@@ -1,0 +1,69 @@
+.ReviewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.ReviewForm__rate, .ReviewForm__review {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ReviewForm__rate h3, .ReviewForm__review h3 {
+  width: 100%;
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 500;
+}
+.ReviewForm__rate {
+  margin-bottom: 20px;
+}
+.ReviewForm__rate_stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 32px;
+  height: 24px;
+}
+.ReviewForm__rate_stars:hover {
+  cursor: pointer;
+}
+.ReviewForm__review {
+  width: 100%;
+}
+.ReviewForm__review form {
+  width: 100%;
+  height: 100%;
+}
+.ReviewForm__review form textarea {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+  resize: none;
+  border: none;
+}
+.ReviewForm__review form textarea:focus {
+  outline: none;
+}
+.ReviewForm__review form button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border: 1px solid #C7C7C7;
+  background: none;
+  font-size: 16px;
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=ReviewForm.css.map */

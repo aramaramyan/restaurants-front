@@ -3,8 +3,9 @@ import { useSelector } from "react-redux";
 import rateCalculator from "../../helpers/rateCalculator";
 import Navbar from "../../components/Navbar/Navbar";
 import PhotoStack from "../../components/PhotoSlider/PhotoSlider";
-import "./RestaurantPage.scss";
 import RateStars from "../../components/RateStars/RateStars";
+import ReviewForm from "../../components/ReviewForm/ReviewForm";
+import "./RestaurantPage.scss";
 
 export default function RestaurantPage() {
   const { id } = useParams();
@@ -48,15 +49,22 @@ export default function RestaurantPage() {
                 <a href={ webPage } target="_blank">Web Page</a>
                 <p>{ openTime }</p>
               </div>
-              <div className="title">
-                <h1>{ name }</h1>
-                <RateStars rate={rate} />
-              </div>
-              <div className="kitchen">
-                <h3>TYPE OF KITCHEN</h3>
-                <ul>
-                  {kitchenType.map((type, index) => <li key={index}>{ type }</li>)}
-                </ul>
+              <div className="info">
+                <div className="info__left">
+                  <div className="title">
+                    <h1>{ name }</h1>
+                    <RateStars rate={rate} />
+                  </div>
+                  <div className="kitchen">
+                    <h3>TYPE OF KITCHEN</h3>
+                    <ul>
+                      {kitchenType.map((type, index) => <li key={index}>{ type }</li>)}
+                    </ul>
+                  </div>
+                </div>
+                <div className="info__right">
+                  <ReviewForm />
+                </div>
               </div>
             </div>
             <div className="RestaurantPage__bottom">

@@ -1,8 +1,6 @@
 import printRateStars from "./../../helpers/printRateStars";
 import "./RateStars.scss";
 
-
-
 export default function RateStars({ rate }) {
   const rateStars = printRateStars(rate);
 

@@ -65,6 +65,28 @@
 .RestaurantPage__top_description .contacts p:visited, .RestaurantPage__top_description .contacts a:visited {
   color: black;
 }
+.RestaurantPage__top_description .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #C7C7C7;
+}
+.RestaurantPage__top_description .info__left, .RestaurantPage__top_description .info__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  width: 50%;
+  height: 100%;
+}
+.RestaurantPage__top_description .info__right {
+  padding: 10px 20px;
+  border-left: 1px solid #C7C7C7;
+}
 .RestaurantPage__top_description .title h1 {
   font-family: "Prompt", sans-serif;
   font-weight: 500;

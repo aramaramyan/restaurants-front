@@ -11,6 +11,10 @@ export default function msToTime(ms) {
   } else if (hours < 24) {
     return `${hours} hrs`;
   } else {
-    return `${days} days`;
+    if(days === 1) {
+      return `${days} day`;
+    } else {
+      return `${days} days`;
+    }
   }
 }

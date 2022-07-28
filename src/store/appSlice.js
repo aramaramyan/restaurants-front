@@ -9,11 +9,17 @@ const appSlice = createSlice({
         "name": "Sherep",
         "reviews": [
           {
-            title: "One of the best places I visited. Service is top! Food so delicious, especially hinkaliDefinitely recommend to visit!",
+            id: "l64nf8mfq5w30r0szog",
+            name: "Samvel Gasparyan",
+            rate: 5,
+            review: "One of the best places I visited. Service is top! Food so delicious, especially hinkaliDefinitely recommend to visit!",
             date: 1658897683122
           },
           {
-            title: "Everything was super delicious and the service is great. The fried khinkali is amazing. Our waiter Argijthi was very friendly and attentive.",
+            id: "l64nf9i5e1fz7g58hrt",
+            name: "Nver Gevorgyan",
+            rate: 5,
+            review: "Everything was super delicious and the service is great. The fried khinkali is amazing. Our waiter Argijthi was very friendly and attentive.",
             date: 1658897704724
           }
         ],
@@ -36,11 +42,17 @@ const appSlice = createSlice({
         "name": "Yasaman",
         "reviews": [
           {
-            title: "I came here with my family and the food was amazing, reasonable price and excellent flavors, i would recommend you to come here.",
+            id: "l64nfaeiyk93l8jkvdq",
+            name: "Nane Babayan",
+            rate: 5,
+            review: "I came here with my family and the food was amazing, reasonable price and excellent flavors, i would recommend you to come here.",
             date: 1658897844839
           },
           {
-            title: "I've been in Yerevan so many times from 2019 this is my first that i eat here food is great and the environment is so lovely and cozy. I will come again and again",
+            id: "l64nfay9ofgsk0dqn4c",
+            name: "Suren Mkrtchyan",
+            rate: 4,
+            review: "I've been in Yerevan so many times from 2019 this is my first that i eat here food is great and the environment is so lovely and cozy. I will come again and again",
             date: 1658898674765
           }
         ],
@@ -63,11 +75,17 @@ const appSlice = createSlice({
         "name": "Seasons",
         "reviews": [
           {
-            title: "This was our 1st food experience in Yerevan. A place were authentic Armenian food meets with European cuisine. Excellent customer service as well as atmosphere. Price was fair.",
+            id: "l64nffwihv21yvawffn",
+            name: "Gurgen Gasparyan",
+            rate: 4,
+            review: "This was our 1st food experience in Yerevan. A place were authentic Armenian food meets with European cuisine. Excellent customer service as well as atmosphere. Price was fair.",
             date: 1658897961363
           },
           {
-            title: "Amazing service and delicious food. Good place for breakfast and brunch, dinner. They have also very tasty options of desserts.",
+            id: "l64nfay9ofgsk0dqn4c",
+            name: "Taron Hovhannisyan",
+            rate: 4,
+            review: "Amazing service and delicious food. Good place for breakfast and brunch, dinner. They have also very tasty options of desserts.",
             date: 1658898001994
           }
         ],
@@ -90,15 +108,25 @@ const appSlice = createSlice({
         "name": "el Garden",
         "reviews": [
           {
-            title: "This is a unique and beautiful place to chill, remember to do a reservation on weekends or else you won’t be able to find a spot!",
+            id: "l64nn0vig7ck2kzun1c",
+            name: "Tigran Danielyan",
+            rate: 5,
+            review: "This is a unique and beautiful place to chill, remember to do a reservation on weekends or else you won’t be able to find a spot!",
             date: 1658898220646
           },
           {
-            title: "Beautiful place, nature, delicious food, Thank you for the garden. :\n" +
+            id: "l64nn1e85eucsdeo4jb",
+            name: "Meruj Darbinyan",
+
+            rate: 5,
+            review: "Beautiful place, nature, delicious food, Thank you for the garden. :\n" +
               "Aren was very hospitable. We also thank him.",
             date: 1658898246118
           },
           {
+            id: "l64nn1v18vc6hi2g10l",
+            name: "Garnik Tonoyan",
+            rate: 5,
             title: "Dear Diana, Thank you very much for your review! We are happy that you saved such a good memory about our restaurant! Looking forward to welcoming you again on your next visit to Armenia!",
             date: 1658898271914
           }
@@ -122,15 +150,21 @@ const appSlice = createSlice({
         "name": "Mezzo",
         "reviews": [
           {
-            title: "Had a great time with friends. The live music was fantastics. Special thanks to Stepan for the warm welcome and fabulous service!!!",
+            id: "l64nn1v18vc1232g10l",
+            name: "Hakob Samvelyan",
+            rate: 5,
+            review: "Had a great time with friends. The live music was fantastics. Special thanks to Stepan for the warm welcome and fabulous service!!!",
             date: 1658898441357
           },
           {
-            title: "The music is good, the hall was cold and mainly why I leave 1 point , as we are here for about 2 hours and still waiting for our food!!! Don’t have words ...",
+            id: "l64nn1v1ed78hi2g10l",
+            name: "Aram Karapetyan",
+            rate: 5,
+            review: "The music is good, the hall was cold and mainly why I leave 1 point , as we are here for about 2 hours and still waiting for our food!!! Don’t have words ...",
             date: 1658898475577
           }
         ],
-        "rates": [3, 5, 5, 2, 1],
+        "rates": [3, 5, 5],
         "phone": "+374 10 524211",
         "location": "st. Isahakyan 28, Yerevan 0009 Armenia",
         "webPage": "https://www.mezzo.am/",

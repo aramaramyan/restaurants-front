@@ -6,6 +6,7 @@ import PhotoStack from "../../components/PhotoSlider/PhotoSlider";
 import RateStars from "../../components/RateStars/RateStars";
 import ReviewForm from "../../components/ReviewForm/ReviewForm";
 import "./RestaurantPage.scss";
+import ReviewList from "../../components/ReviewList/ReviewList";
 
 export default function RestaurantPage() {
   const { id } = useParams();
@@ -67,9 +68,9 @@ export default function RestaurantPage() {
                 </div>
               </div>
             </div>
-            <div className="RestaurantPage__bottom">
-
-            </div>
+          </div>
+          <div className="RestaurantPage__bottom">
+            <ReviewList reviews={reviews}/>
           </div>
         </div>
       </div>

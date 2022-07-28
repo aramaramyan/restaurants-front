@@ -1,0 +1,36 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+
+.ReviewList {
+  @include flexColumn(flex-start, flex-start);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 70px;
+
+  &__title {
+    @include flexRow(flex-start, center);
+    gap: 15px;
+    width: 100%;
+
+    h2 {
+      font-size: 28px;
+      font-family: 'Hind Guntur', sans-serif;
+      font-weight: 500;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__content {
+    @include flexColumn(flex-start, flex-start);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-top: 1px solid getColor("silver");
+    overflow: auto;
+  }
+}

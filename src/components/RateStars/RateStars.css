@@ -1,0 +1,17 @@
+.RateStars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.RateStars p {
+  font-size: 18px;
+  cursor: default;
+}
+.RateStars img {
+  width: 24px;
+  height: 24px;
+}
+
+/*# sourceMappingURL=RateStars.css.map */

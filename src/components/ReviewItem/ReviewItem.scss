@@ -4,7 +4,7 @@
 .ReviewItem {
   @include flexRow(flex-start, flex-start);
   gap: 16px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   &__userPhoto {
     @include flexColumn(flex-start, flex-start);

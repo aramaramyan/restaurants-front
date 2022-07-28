@@ -1,8 +1,33 @@
+@import "./../../styles/colors";
 @import "./../../styles/mixins";
 
 .RestaurantsList {
-  @include flexColumn(flex-start, center);
+  @include flexColumn(flex-start, flex-start);
   width: 100%;
-  height: 100%;
-  overflow: auto;
+  height: calc(100vh - 80px);
+
+  &__title {
+    @include flexRow(flex-start, center);
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+
+    h2 {
+      font-family: 'Prompt', sans-serif;;
+      font-weight: 500;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__content {
+    @include flexColumn(flex-start, flex-start);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
 }

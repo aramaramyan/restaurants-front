@@ -96,7 +96,7 @@ export default function ReviewForm() {
             value={review}
             onChange={handleTextarea}
           />
-          <button type="submit" onClick={onFormSubmit}>Submit your review</button>
+          <button type="submit" onClick={onFormSubmit}>Submit Review</button>
         </form>
       </div>
     </div>

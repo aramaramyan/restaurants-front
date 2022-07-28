@@ -1,0 +1,85 @@
+@import "./../../styles/colors";
+@import "./../../styles/mixins";
+
+.Loader {
+  @include flexRow(center, center);
+  gap: 40px;
+  width: 100%;
+  height: 100vh;
+
+  &__rings {
+    border-radius: 50px;
+    border: 5px solid transparent;
+    border-top-color: #746D69;
+    animation: load 1s linear infinite;
+    -webkit-animation: load 1s linear infinite;
+    -o-animation: load 1s linear infinite;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      bottom: 5px;
+      right: 5px;
+      border-radius: 50px;
+      border: 4px solid transparent;
+      border-top-color: #BBBCB6;
+      opacity: 0.8;
+      animation: load-reverse 2.5s linear infinite;
+      -webkit-animation: load 2.5s linear infinite;
+      -o-animation: load 2.5s linear infinite;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      bottom: 12px;
+      right: 12px;
+      border-radius: 50px;
+      border: 3px solid transparent;
+      border-top-color: #ACADA8;
+      opacity: 0.5;
+      animation: load 5s linear;
+      -webkit-animation: load 5s linear infinite;
+      -o-animation: load 5s linear infinite;
+    }
+  }
+
+  p {
+    font-size: 26px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+/*Keyframes load*/
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Keyframes load-reverse*/
+
+@keyframes load-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

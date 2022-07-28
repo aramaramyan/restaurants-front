@@ -1,16 +1,13 @@
-import { useParams, useNavigate } from "react-router";
-import { useSelector } from "react-redux";
+import {useNavigate} from "react-router";
 import rateCalculator from "../../helpers/rateCalculator";
 import Navbar from "../../components/Navbar/Navbar";
 import PhotoStack from "../../components/PhotoSlider/PhotoSlider";
 import RateStars from "../../components/RateStars/RateStars";
-import ReviewForm from "../../components/ReviewForm/ReviewForm";
-import "./RestaurantPage.scss";
+import ReviewFormContainer from "../../components/ReviewForm/ReviewFormContainer";
 import ReviewList from "../../components/ReviewList/ReviewList";
+import "./RestaurantPage.scss";
 
-export default function RestaurantPage() {
-  const { id } = useParams();
-  const restaurant = useSelector(state => state.app.restaurants).find(item => item.id === +id);
+export default function RestaurantPage({ restaurant }) {
   const {
     name,
     reviews,
@@ -64,7 +61,7 @@ export default function RestaurantPage() {
                   </div>
                 </div>
                 <div className="info__right">
-                  <ReviewForm />
+                  <ReviewFormContainer />
                 </div>
               </div>
             </div>

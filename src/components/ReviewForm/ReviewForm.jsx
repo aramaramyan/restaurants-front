@@ -8,13 +8,11 @@ const PLACEHOLDER = {
   ERROR: "You can't send empty review!",
 }
 
-export default function ReviewForm() {
+export default function ReviewForm({ sendReview }) {
   const [rate, setRate] = useState(0);
   const [stars, setStars] = useState([starLined, starLined, starLined, starLined, starLined]);
   const [review, setReview] = useState("");
   const [placeholder, setPlaceholder] = useState(PLACEHOLDER.DEFAULT);
-
-  console.log(`:::"render":::`);
 
   function onHover(index) {
     setStars(prev => [...prev.fill(starFilled, 0, index + 1)]);
@@ -48,14 +46,11 @@ export default function ReviewForm() {
     if(review.trim()) {
       const data = {
         rate,
-        review
+        review,
+        date: Date.now()
       }
 
-      if(rate) {
-        // must push rate to db anr review
-      } else {
-        // only push review
-      }
+      sendReview(data);
 
       setReview("");
       setRate(0);

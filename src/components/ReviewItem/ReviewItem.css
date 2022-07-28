@@ -13,8 +13,8 @@
   align-items: flex-start;
 }
 .ReviewItem__userPhoto_icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 .ReviewItem__content {
   display: flex;
@@ -34,7 +34,7 @@
 .ReviewItem__content_header p:first-child {
   font-family: "Hind Guntur", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 .ReviewItem__content_header p:last-child {
   font-family: "Hind Guntur", sans-serif;
@@ -42,7 +42,7 @@
 }
 .ReviewItem__content_text {
   width: 80%;
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
   overflow-wrap: break-word;
 }
@@ -54,7 +54,7 @@
   width: 100%;
 }
 .ReviewItem__content_footer .rateText {
-  margin-right: 10px;
+  margin-right: 8px;
   font-weight: 500;
 }
 

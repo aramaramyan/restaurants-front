@@ -10,8 +10,8 @@
     @include flexColumn(flex-start, flex-start);
 
     &_icon {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -28,7 +28,7 @@
         &:first-child {
           font-family: "Hind Guntur", sans-serif;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 16px;
         }
 
         &:last-child {
@@ -40,7 +40,7 @@
 
     &_text {
       width: 80%;
-      font-size: 20px;
+      font-size: 16px;
       font-style: italic;
       overflow-wrap: break-word;
     }
@@ -50,7 +50,7 @@
       width: 100%;
 
       .rateText {
-        margin-right: 10px;
+        margin-right: 8px;
         font-weight: 500;
       }
     }

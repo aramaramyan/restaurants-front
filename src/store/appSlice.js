@@ -16,20 +16,14 @@ const appSlice = createSlice({
   initialState: {
     restaurants: [],
     current: {},
-    isLoadingRestaurants: false,
-    isLoadingRestaurant: false
+    isLoadingRestaurants: true,
+    isLoadingRestaurant: true
   },
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getRestaurantsThunk.pending, state => {
-      state.isLoadingRestaurants = true;
-    });
     builder.addCase(getRestaurantsThunk.fulfilled, (state, action) => {
       state.restaurants = action.payload;
       state.isLoadingRestaurants = false;
-    });
-    builder.addCase(getRestaurantThunk.pending, state => {
-      state.isLoadingRestaurant = true;
     });
     builder.addCase(getRestaurantThunk.fulfilled, (state, action) => {
       state.current = action.payload;

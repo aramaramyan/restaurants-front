@@ -3,7 +3,7 @@ import rateCalculator from "../../helpers/rateCalculator";
 import Navbar from "../../components/Navbar/Navbar";
 import PhotoStack from "../../components/PhotoSlider/PhotoSlider";
 import RateStars from "../../components/RateStars/RateStars";
-import ReviewForm from "../../components/ReviewForm/ReviewForm";
+import ReviewFormContainer from "../../components/ReviewForm/ReviewFormContainer";
 import ReviewList from "../../components/ReviewList/ReviewList";
 import "./RestaurantPage.scss";
 
@@ -61,7 +61,7 @@ export default function RestaurantPage({ restaurant }) {
                   </div>
                 </div>
                 <div className="info__right">
-                  <ReviewForm />
+                  <ReviewFormContainer />
                 </div>
               </div>
             </div>

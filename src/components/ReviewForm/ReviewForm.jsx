@@ -1,6 +1,7 @@
 import { useState } from "react";
 import starLined from "./../../icons/star_lined.svg";
 import starFilled from "./../../icons/star_filled.svg";
+import Button from "../Button/Button";
 import "./ReviewForm.scss";
 
 const PLACEHOLDER = {
@@ -91,7 +92,8 @@ export default function ReviewForm({ sendReview }) {
             value={review}
             onChange={handleTextarea}
           />
-          <button type="submit" onClick={onFormSubmit}>Submit Review</button>
+          {/*<button type="submit" onClick={onFormSubmit}>Submit Review</button>*/}
+          <Button width="200px" height="40px" content="Submit Review"/>
         </form>
       </div>
     </div>

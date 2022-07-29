@@ -6,7 +6,7 @@ import "./ReviewForm.scss";
 
 const PLACEHOLDER = {
   DEFAULT: "Write your review here...",
-  ERROR: "You can't send empty review!",
+  ERROR: "You can't send an empty review!",
 }
 
 export default function ReviewForm({ sendReview }) {

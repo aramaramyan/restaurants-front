@@ -1,4 +1,4 @@
-import RestaurantItem from "../RestaurantItem/RestaurantItem";
+import RestaurantItemContainer from "../RestaurantItem/RestaurantItemContainer";
 import listIcon from "./../../icons/list.svg";
 import "./RestaurantsList.scss"
 
@@ -11,14 +11,9 @@ export default function RestaurantsList({ restaurants }) {
       </div>
       <div className="RestaurantsList__content">
         {restaurants.map(restaurant => {
-          return <RestaurantItem
+          return <RestaurantItemContainer
             key={restaurant.id}
-            id={restaurant.id}
-            name={restaurant.name}
-            logo={restaurant.images[0]}
-            rates={restaurant.rates}
-            location={restaurant.location}
-            openTime={restaurant.openTime}
+            restaurant={restaurant}
           />;
         })}
       </div>

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import logo from "./../../img/logo.png"
+import userIcon from "./../../icons/user.svg";
 import "./Navbar.scss";
 
 export default function Navbar() {
@@ -11,14 +12,17 @@ export default function Navbar() {
 
   return (
     <div className="Navbar">
-      <div className="container">
-        <img
-          src={logo}
-          className="Navbar__logo"
-          alt="App Logo"
-          onClick={goToRestaurants}
-        />
-      </div>
+      <img
+        src={logo}
+        className="Navbar__logo"
+        alt="App Logo"
+        onClick={goToRestaurants}
+      />
+      <img
+        src={userIcon}
+        alt="User Icon"
+        className="Navbar__userIcon"
+      />
     </div>
   );
 }

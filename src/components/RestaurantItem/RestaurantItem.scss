@@ -25,9 +25,14 @@
     width: 100%;
     height: 150px;
 
-    &_name {
-      font-size: 26px;
-      font-family: 'Prompt', sans-serif;
+    &_header {
+      @include flexRow(space-between, center);
+      width: 100%;
+
+      h3 {
+        font-size: 26px;
+        font-family: 'Prompt', sans-serif;
+      }
     }
 
     &_openTime {

@@ -1,4 +1,4 @@
-import {createSlice, createAsyncThunk, current} from "@reduxjs/toolkit";
+import {createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import getRestaurants from "../services/getRestaurants";
 import getRestaurant from "../services/getRestaurant";
 import sendReview from "../services/sendReview";
@@ -21,14 +21,35 @@ const appSlice = createSlice({
     restaurants: [],
     current: {},
     isLoadingRestaurants: true,
-    isLoadingRestaurant: true
+    isLoadingRestaurant: true,
+    coordinates: {
+      lng: 44.511693,
+      lat: 40.178546,
+      zoom: 12
+    },
+    marker: {
+      name: null,
+      location: null,
+      openTime: null,
+      imgUrl: null,
+      mLng: null,
+      mLat: null,
+    }
   },
   reducers: {
     setReviews(state, action) {
       state.current = {
         ...state.current,
         reviews: action.payload
-      }
+      };
+    },
+
+    setCoordinates(state, action) {
+      state.coordinates = action.payload;
+    },
+
+    setMarker(state, action) {
+      state.marker = action.payload;
     }
   },
   extraReducers: (builder) => {
@@ -43,5 +64,5 @@ const appSlice = createSlice({
   }
 });
 
-export const {setReviews} = appSlice.actions;
+export const {setReviews, setCoordinates, setMarker} = appSlice.actions;
 export default appSlice.reducer;

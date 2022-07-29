@@ -1,11 +1,12 @@
 import { useState } from "react";
 import starLined from "./../../icons/star_lined.svg";
 import starFilled from "./../../icons/star_filled.svg";
+import Button from "../Button/Button";
 import "./ReviewForm.scss";
 
 const PLACEHOLDER = {
   DEFAULT: "Write your review here...",
-  ERROR: "You can't send empty review!",
+  ERROR: "You can't send an empty review!",
 }
 
 export default function ReviewForm({ sendReview }) {
@@ -91,7 +92,9 @@ export default function ReviewForm({ sendReview }) {
             value={review}
             onChange={handleTextarea}
           />
-          <button type="submit" onClick={onFormSubmit}>Submit Review</button>
+          <div className="ReviewForm__review_button">
+            <Button w="200px" h="40px" content="Submit Review" action={onFormSubmit}/>
+          </div>
         </form>
       </div>
     </div>

@@ -1,11 +1,68 @@
 .MapContainer {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
   border-left: 1px solid #C7C7C7;
+}
+.MapContainer::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: url("./../../img/paper.png") 0 0 no-repeat;
+  z-index: 2;
+}
+.MapContainer::after {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 0;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 250px;
+  background: url("./../../img/paper.png") 0 0 no-repeat;
+  z-index: 2;
+}
+.MapContainer__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  z-index: 3;
+}
+.MapContainer__title h2 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+}
+.MapContainer__title img {
+  min-width: 24px;
+  height: 24px;
+}
+.MapContainer__content {
+  width: 600px;
+  height: calc(100vh - 220px);
+}
+.MapContainer__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=Map.css.map */

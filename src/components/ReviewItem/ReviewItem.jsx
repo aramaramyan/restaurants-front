@@ -21,12 +21,12 @@ export default function ReviewItem({name, review, rate, date}) {
           <p>{review}</p>
         </div>
         <div className="ReviewItem__content_footer">
-          { rate && (
+          { rate ? (
             <>
               <p className="rateText">Rate:</p>
               <RateStars rate={rate}/>
             </>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

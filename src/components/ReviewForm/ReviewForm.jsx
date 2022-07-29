@@ -92,8 +92,9 @@ export default function ReviewForm({ sendReview }) {
             value={review}
             onChange={handleTextarea}
           />
-          {/*<button type="submit" onClick={onFormSubmit}>Submit Review</button>*/}
-          <Button width="200px" height="40px" content="Submit Review"/>
+          <div className="ReviewForm__review_button">
+            <Button w="200px" h="40px" content="Submit Review" action={onFormSubmit}/>
+          </div>
         </form>
       </div>
     </div>

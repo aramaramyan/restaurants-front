@@ -1,12 +1,13 @@
 import "./Button.scss";
 
-export default function Button({ width, height, content }) {
+export default function Button({ w, h, content, action }) {
   return <button
     type="submit"
     className="Button"
     style={{
-      width: width,
-      height: height
+      width: w,
+      height: h
     }}
+    onClick={action}
   >{ content }</button>
 }
